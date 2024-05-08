@@ -1,0 +1,24 @@
+<title> Mahsulotlar</title>
+
+<h1>Mahsulot</h1><br>
+
+
+<body>
+{% for product in Product %}
+    <img src= "{{product.photo.url}}"/><br>
+    {{ product.category }}<br>
+    Name:{{ product.name }}<br>
+    Model:{{ product.model }}<br>
+    Make:{{ product.make }}<br>
+    Price:{{ product.price }}<hr/>
+
+
+
+
+
+
+{% endfor %}
+
+
+
+</body>
